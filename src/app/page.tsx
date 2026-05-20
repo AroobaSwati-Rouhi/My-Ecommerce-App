@@ -100,13 +100,11 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-2 px-1">
           <div>
             <div className="flex items-center gap-2 text-purple-500 font-mono text-[10px] uppercase tracking-widest font-bold">
-              <span>01 / Inventory Catalog</span>
+              <span> Inventory Catalog</span>
             </div>
             <h2 className="text-2xl font-black tracking-tight text-slate-900 mt-1">Trending Products</h2>
           </div>
-          <p className="text-xs text-slate-400 max-w-xs sm:text-right font-light">
-            Dynamic client-state calculation mapping directly to cached clusters.
-          </p>
+         
         </div>
         
         <div className="h-px bg-gradient-to-r from-slate-200 via-slate-200/40 to-transparent" />
