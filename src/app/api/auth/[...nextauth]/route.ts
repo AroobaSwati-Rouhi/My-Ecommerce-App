@@ -3,7 +3,7 @@ import CredentialsProvider from "next-auth/providers/credentials";
 import User from "@/models/User";
 import bcrypt from "bcryptjs";
 import { connectToDatabase } from "@/lib/mongodb";
-import clientPromise from "@/lib/mongodb";
+
 
 export const authOptions: NextAuthOptions = {
   providers: [

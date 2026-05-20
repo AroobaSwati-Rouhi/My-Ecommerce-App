@@ -9,7 +9,8 @@ export default async function DashboardPage() {
 
   if (!session) return <div className="p-10 text-center">Please login to view your orders.</div>;
 
-  const orders = await Order.find({ userId: session.user.id }).sort({ createdAt: -1 });
+  const userId = (session.user as any)?.id;
+const orders = await Order.find({ userId: userId }).sort({ createdAt: -1 });
   const steps = ["processing", "shipped", "delivered"];
 
   return (

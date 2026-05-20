@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
+
 export default function RegisterPage() {
   const router = useRouter();
   const [name, setName] = useState("");
@@ -12,6 +13,7 @@ export default function RegisterPage() {
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const [role, setRole] = useState("customer");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

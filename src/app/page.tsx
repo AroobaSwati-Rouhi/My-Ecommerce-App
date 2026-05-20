@@ -16,16 +16,14 @@ export default function Home() {
 
   const itemVariants = {
     hidden: { opacity: 0, y: 25 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" as any } }
   };
 
   return (
     <div className="space-y-16 pb-20">
       
-      {/* 🌟 Luxury Immersive Hero Banner Segment */}
       <div className="relative overflow-hidden rounded-3xl bg-slate-900 text-white border border-slate-800 p-8 sm:p-12 md:p-16 shadow-2xl shadow-indigo-950/20">
         
-        {/* Hardware-Accelerated Dynamic Glass Floating Blobs */}
         <motion.div 
           animate={{ 
             scale: [1, 1.2, 1], 
@@ -45,10 +43,8 @@ export default function Home() {
           className="absolute -bottom-16 left-1/4 h-48 w-48 rounded-full bg-pink-500/20 blur-3xl pointer-events-none" 
         />
 
-        {/* Grid Overlay Matrix pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-25 pointer-events-none" />
 
-        {/* Content Stream Layer (Staggered Animations) */}
         <motion.div 
           variants={containerVariants}
           initial="hidden"
@@ -80,7 +76,6 @@ export default function Home() {
             Immerse yourself into high-performance web architecture. AuraMarket provides atomic data validation integrity loops combined with silicon-valley design patterns out of the box.
           </motion.p>
 
-          {/* Call To Action Buttons (Thumb-Zone Optimization) */}
           <motion.div variants={itemVariants} className="flex flex-wrap gap-4 pt-2">
             <Link href="#catalog" className="premium-btn text-xs py-3.5 px-6 shadow-indigo-600/30 flex items-center gap-2 cursor-pointer">
               Explore Collections
